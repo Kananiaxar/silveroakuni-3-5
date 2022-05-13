@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>CSS Hover Element - Selector OR Child Combinator</title>
+		<style type="text/css">
+			#MainUL li ul li{display:none;}
+			#MainUL li:hover ul li{display:block;}
+			#MainUL li:hover ul li ul li{display:none;}
+			#MainUL li ul li:hover ul li{display:block;}
+			#MainUL li ul li:hover ul li ul li{display:none;}
+			#MainUL li ul li ul li:hover ul li{display:block;}
+		</style>
+		
+	</head>
+	<body bgcolor="aqua">
+		<h1>*laptops brand*</h1>
+		
+		<ul id="MainUL">
+			<li>asus
+				<ul>
+					<li>tuf 
+						<ul>
+							<li>f15<ul>
+								<li>i5</li>
+									<li>i7</li>
+								</ul>
+							</li>
+							<li>a15</li>
+						</ul>
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</li>
+			<li>mac</li>
+			<li>hp
+				<ul>
+					<li>pavilion i5</li>
+					<li>pavilion i7</li>
+				</ul>
+			</li>
+			<li>dell</li>
+			<li>lenovo
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</li>
+		</ul>
+		
+	</body>
+</html>
